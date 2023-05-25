@@ -1,0 +1,27 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid red; */
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

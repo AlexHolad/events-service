@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    color: white;
+    background-color: #FA8128;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.3em 0;
+}
+
+
+
+@media (min-width: 800px) {
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+    
+    .logo {
+        cursor: pointer;
+    }
+    
+    .nav__item {
+        margin-left: 1em;
+        cursor: pointer;
+    }
+    
+    .nav__icon {
+        width: 30px;
+        height: auto;
+        margin-left: 1em;
+        cursor: pointer;
+    }
+    
+    .nav__list--primary {
+        display: flex;
+    }
+    
+    .search {
+        border: none;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+    }
+    
+    .search:focus {
+        border-color: #FA8128;
+        outline: none;
+    }
+    
+    .nav__date {
+        align-items:center;
+    }
+    
+}
