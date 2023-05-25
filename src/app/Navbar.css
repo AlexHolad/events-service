@@ -1,57 +1,118 @@
 header {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 1em 0;
+  background-color: var(--main-color);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__firstline {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__icons {
+  align-items: center;
+}
+
+.nav__secondline {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.nav__firstline img:hover {
+  fill: red;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__search {
+  display: none;
+  border: solid 1px var(--font-color);
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.nav__search:focus {
+  border-color: none;
+  outline: none;
+}
+
+.nav__item {
+  cursor: pointer;
+  max-width: 300px;
+  min-width: 125px;
+  padding: 0.5em 2em;
+}
+
+.nav__icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav__icon + .nav__icon {
+  margin-left: 1em;
+}
+
+.nav__date {
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .toggle {
     display: flex;
-    color: white;
-    background-color: #FA8128;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    padding: 0.3em 0;
+  }
 }
 
 
+@media (min-width: 900px) {
+  header {
+    padding-bottom: 0.5em;
+  }
 
-@media (min-width: 800px) {
-    .nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-grow: 1;
-    }
-    
-    .logo {
-        cursor: pointer;
-    }
-    
-    .nav__item {
-        margin-left: 1em;
-        cursor: pointer;
-    }
-    
-    .nav__icon {
-        width: 30px;
-        height: auto;
-        margin-left: 1em;
-        cursor: pointer;
-    }
-    
-    .nav__list--primary {
-        display: flex;
-    }
-    
-    .search {
-        border: none;
-        border-radius: 0.5em;
-        padding: 0.5em 1em;
-    }
-    
-    .search:focus {
-        border-color: #FA8128;
-        outline: none;
-    }
-    
-    .nav__date {
-        align-items:center;
-    }
-    
+  .nav__secondline {
+  margin-top: 0;
 }
+
+  .nav__item {
+    border-radius: 150px;
+    transition-duration: 0.3s;
+  }
+
+  .nav__item:hover {
+    background-color: var(--font-color);
+    color: var(--main-color);
+  }
+}
+
