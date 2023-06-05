@@ -1,8 +1,9 @@
 import { useState } from "react";
+
 import "./Navbar.css";
 
 export const Navbar = () => {
-  const [menuToggle, setMenuToggle] = useState(false)
+  const [menuToggle, setMenuToggle] = useState(false);
 
   return (
     <header>
@@ -33,11 +34,9 @@ export const Navbar = () => {
             />
           </div>
         </div>
-        <div className={`nav__secondline ${menuToggle ? 'shown' : 'toggle'}`}>
+        <div className={`nav__secondline ${menuToggle ? "shown" : "toggle"}`}>
           <ul className="nav__list">
-            <li className="nav__item">
-              <p>Площадки</p>
-            </li>
+            <li className="nav__item">Площадки</li>
             <li className="nav__item">Концерты</li>
             <li className="nav__item">Театр</li>
             <li className="nav__item">Детям</li>

@@ -1,0 +1,55 @@
+DELETE http://localhost:5000/signout
+content-type: application/json
+
+{
+    "userId": "647b06a3ebb569f55c3cc708"
+}
+
+###
+POST http://localhost:5000/register
+content-type: application/json
+
+{
+    "email": "aksana@gmail.com",
+    "password": "aksana",
+    "events": [] 
+}
+
+###
+
+POST http://localhost:5000/signin
+content-type: application/json
+
+{
+    "email": "aksana@gmail.com",
+    "password": "aksana"
+}
+
+###
+POST http://localhost:5000/events
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODU3OTA5MzAsInVzZXIiOnsiX2lkIjoiNjQ3YjA2YTNlYmI1NjlmNTVjM2NjNzA4IiwiZW1haWwiOiJha3NhbmFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkVU5BTjV0WXBiWWFBcEhiN0tzc3AwT0l1akl1bHdXZ3hVMExPbFZBdmNYWVdHbFZENXVLemEiLCJldmVudHMiOltdLCJfX3YiOjB9fQ.HqQAT9x6WWAEV6X2MtwXhh5PvyHnh6KtAEpVvi2jLm4
+content-type: application/json
+
+{
+    "title": "Jazz concert",
+    "category": "концерты",
+    "description": "Laborum tempor incididunt anim est id duis culpa cupidatat dolor aute. Do eiusmod sit nisi magna sint tempor ex. Ipsum ad magna occaecat commodo culpa cupidatat ut consequat cillum aute esse esse.",
+    "district": "Marzahn",
+    "location": "Mercedes Benz Arena",
+    "date": "2023-05-28 15:38:53",
+    "img": "/events-imgs/jazz-concert.jpg",
+    "userId": "647b06a3ebb569f55c3cc708",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2NDdiMDZhM2ViYjU2OWY1NWMzY2M3MDgiLCJlbWFpbCI6ImFrc2FuYUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRVTkFONXRZcGJZYUFwSGI3S3NzcDBPSXVqSXVsd1dneFUwTE9sVkF2Y1hZV0dsVkQ1dUt6YSIsImV2ZW50cyI6W10sIl9fdiI6MH0.W5WOxSA2J0QQaNpriZqZY-nYnapLrPSMzASRSE0awm0"
+}
+
+
+###
+
+GET http://localhost:5000/events
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODU3ODQyNDIsInVzZXIiOnsiZW1haWwiOiJha3NhbmFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkVU5BTjV0WXBiWWFBcEhiN0tzc3AwT0l1akl1bHdXZ3hVMExPbFZBdmNYWVdHbFZENXVLemEiLCJldmVudHMiOltdLCJfaWQiOiI2NDdiMDZhM2ViYjU2OWY1NWMzY2M3MDgiLCJfX3YiOjB9fQ.V3acOSUMLGXvdJRBy9QNcphxtFjiz3qTHh4uyVJqOiA
+content-type: application/json
+
+{
+    "userId": "647b06a3ebb569f55c3cc708",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFrc2FuYUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRVTkFONXRZcGJZYUFwSGI3S3NzcDBPSXVqSXVsd1dneFUwTE9sVkF2Y1hZV0dsVkQ1dUt6YSIsImV2ZW50cyI6W10sIl9pZCI6IjY0N2IwNmEzZWJiNTY5ZjU1YzNjYzcwOCIsIl9fdiI6MH0.we7gBEIlYBEMSOkzlQVKEcDL8q3JccVm7W9Jfvc_HoI"
+}
